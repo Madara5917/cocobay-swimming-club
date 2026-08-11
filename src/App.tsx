@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, Check, ChevronDown, Clock3, Droplets, Instagram,
   MapPin, Menu, Phone, Play, ShieldCheck, Sparkles, Star,
-  Users, Waves, X, MessageCircle
+  Users, Waves, X, MessageCircle, type LucideIcon
 } from "lucide-react";
 
 const WHATSAPP = "https://wa.me/919999999999"; // Replace with owner's WhatsApp number
@@ -27,7 +27,7 @@ const programs = [
   },
 ];
 
-const facilities = [
+const facilities: [string, string, string, LucideIcon][] = [
   ["01", "Swimming Pool", "A dedicated space designed for enjoyable and focused swimming sessions.", Waves],
   ["02", "Changing Rooms", "Convenient changing facilities to keep every visit comfortable.", Users],
   ["03", "Showers", "Freshen up before and after your session with on-site shower facilities.", Droplets],
